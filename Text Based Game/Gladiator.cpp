@@ -55,7 +55,6 @@ int Gladiator::NormalAttack()
 
 int Gladiator::SpecialAttack()
 {
-	// Better way ???
 	damageDone = 0;
 	return damageDone;
 }
@@ -65,17 +64,6 @@ int Gladiator::Deffence()
 	//May be changed to virtual and redifined in each child
 	int damageBlocked = armor;
 	return damageBlocked;
-}
-
-//
-int Gladiator::GetTypeOfGladiator()
-{
-	return typeOfGladiator;
-}
-//
-void Gladiator::SetTypeOfGladiator(int type)
-{
-	this->typeOfGladiator = type;
 }
 
 void Gladiator::PrintTest()

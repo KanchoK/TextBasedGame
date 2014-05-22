@@ -8,8 +8,6 @@ using namespace std;
 class Gladiator
 {
 protected:
-	//It may be unnecessery to have typeOfGladiator in Gladiator class
-	int typeOfGladiator;
 
 	bool alive;
 	string name;
@@ -37,11 +35,6 @@ public:
 	int NormalAttack();
 	virtual int SpecialAttack();
 	int Deffence();
-
-	//
-	int GetTypeOfGladiator();
-	//
-	void SetTypeOfGladiator(int type);
 
 	void PrintTest();
 };

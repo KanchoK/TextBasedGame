@@ -32,14 +32,8 @@ void Game::Run()
 		break;
 	case 5:
 		gladiator = new Samnite(playerCreator.GetName());
-
-		//Irrelevante ???
-		//Samnite* player = static_cast<Samnite*>(gladiator);
-		//player = new Samnite(playerCreator.GetName());
 		break;
 	}
-	//It may be unnecessery to have typeOfGladiator in Gladiator class
-	gladiator->SetTypeOfGladiator(typeFromCreator);
 
 	cout << endl;
 
@@ -56,7 +50,7 @@ void Game::Run()
 		}
 		else
 		{
-			cout << "Do you want to fight: 1 - Yes; 0 - No.\n";
+			cout << "Do you want to fight again: 1 - Yes; 0 - No.\n";
 			cin >> continueTheGame;
 			if(continueTheGame == 0)
 				break;

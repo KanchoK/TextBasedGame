@@ -46,12 +46,6 @@ void FightSimulator::Fight(Gladiator* player, Gladiator* enemy)
 			break;
 		}
 
-		////test
-		//cout << "-----------------------------------------------\n";
-		//player->PrintTest();
-		//enemy->PrintTest();
-		//cout << "-----------------------------------------------\n";
-
 		cout << "Enemy's turn.\n";
 		RandomGenerator randomGenerator;
 		int typeOfEnemyAttack = randomGenerator.RandNumber(1, 3);
@@ -72,12 +66,6 @@ void FightSimulator::Fight(Gladiator* player, Gladiator* enemy)
 			break;
 		}
 		cout << "-----------------------------------------------\n";
-
-		////test
-		//cout << "-----------------------------------------------\n";
-		//player->PrintTest();
-		//enemy->PrintTest();
-		//cout << "-----------------------------------------------\n";
 
 		//sets the player's and enemy's damegeDone after the blocked damage is taken in consideretion
 		if (playerDamageDone > enemyDamageBlocked)
