@@ -64,7 +64,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Dimachaerius.cpp" />
+    <ClCompile Include="EnemyCreator.cpp" />
+    <ClCompile Include="FightSimulator.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Gladiator.cpp" />
+    <ClCompile Include="Info.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Murmillo.cpp" />
+    <ClCompile Include="PlayerCreator.cpp" />
+    <ClCompile Include="RandomGenerator.cpp" />
+    <ClCompile Include="Retarius.cpp" />
+    <ClCompile Include="Samnite.cpp" />
+    <ClCompile Include="Thraex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dimachaerius.h" />
+    <ClInclude Include="EnemyCreator.h" />
+    <ClInclude Include="FightSimulator.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Gladiator.h" />
+    <ClInclude Include="Info.h" />
+    <ClInclude Include="Murmillo.h" />
+    <ClInclude Include="PlayerCreator.h" />
+    <ClInclude Include="RandomGenerator.h" />
+    <ClInclude Include="Retarius.h" />
+    <ClInclude Include="Samnite.h" />
+    <ClInclude Include="Thraex.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
