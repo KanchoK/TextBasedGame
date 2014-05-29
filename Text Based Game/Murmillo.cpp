@@ -28,7 +28,7 @@ int Murmillo::SpecialAttack()
 	}
 	else
 	{
-		cout << name << " used Murmillo's special attack ...\n";
+		cout << name << " used Murmillo's special attack Kick and Slice\n";
 		damageDone = damage + 15;
 		stamina -= neededStamina;
 	}

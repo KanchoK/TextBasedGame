@@ -11,7 +11,7 @@ Thraex::Thraex()
 Thraex::Thraex(string name)
 {
 	this->name = name;
-	health = 100;
+	health = 110;
 	stamina = 160;
 	damage = 15;
 	armor = 25;
@@ -28,8 +28,8 @@ int Thraex::SpecialAttack()
 	}
 	else
 	{
-		cout << name << " used Thraex' special attack ...\n";
-		damageDone = damage + 10;
+		cout << name << " used Thraex' special attack Backstab\n";
+		damageDone = damage + 20;
 		stamina -= neededStamina;
 	}
 	return damageDone;

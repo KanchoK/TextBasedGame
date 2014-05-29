@@ -28,7 +28,7 @@ int Samnite::SpecialAttack()
 	}
 	else
 	{
-		cout << name << " used Samnite' special attack ...\n";
+		cout << name << " used Samnite' special attack Caunter Attack\n";
 		damageDone = damage + 15;
 		stamina -= neededStamina;
 	}

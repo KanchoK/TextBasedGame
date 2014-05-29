@@ -46,6 +46,7 @@ void FightSimulator::Fight(Gladiator* player, Gladiator* enemy)
 			break;
 		}
 
+		cout << "-----------------------------------------------\n";
 		cout << "Enemy's turn.\n";
 		RandomGenerator randomGenerator;
 		int typeOfEnemyAttack = randomGenerator.RandNumber(1, 3);
@@ -54,6 +55,7 @@ void FightSimulator::Fight(Gladiator* player, Gladiator* enemy)
 		case 1:
 			enemyDamageBlocked = 0;
 			enemyDamageDone = enemy->NormalAttack();
+			cout << enemy->GetName() << " used Normal attack\n";
 			break;
 		case 2:
 			enemyDamageBlocked = 0;
@@ -63,6 +65,7 @@ void FightSimulator::Fight(Gladiator* player, Gladiator* enemy)
 		default:
 			enemyDamageDone = 0;
 			enemyDamageBlocked = enemy->Deffence();
+			cout << enemy->GetName() << " used Deffence\n";
 			break;
 		}
 		cout << "-----------------------------------------------\n";

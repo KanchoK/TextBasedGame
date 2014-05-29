@@ -2,7 +2,7 @@
 
 void Game::Run()
 {
-	cout << "Welcome to the Gladiator's Arena." <<endl;
+	cout << "Welcome to the Gladiator's Arena.\n";
 	cout << "-------------------------------------------------------------------\n";
 	cout << "If you are playing for first time or you don't know the different types of\n";
 	cout << "gladiators, form which you can choose enter 1 !!! Otherwise, enter 0.\n";

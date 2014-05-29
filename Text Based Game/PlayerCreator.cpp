@@ -2,7 +2,7 @@
 
 void PlayerCreator::CreatePlayer()
 {
-	cout << "What's your name warrior?\n";
+	cout << "What's your name warrior? (enter your nickname)\n";
 	cin >> name;
 	cout << "What kind of gladiator are you " << name << "?\n";
 	cout << "1 - Murmillo; 2 - Thraex; 3 - Retarius; 4 - Dimachaerius; 5 - Samnite\n";
