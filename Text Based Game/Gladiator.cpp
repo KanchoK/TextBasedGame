@@ -59,7 +59,7 @@ int Gladiator::SpecialAttack()
 	return damageDone;
 }
 
-int Gladiator::Deffence()
+int Gladiator::Defence()
 {
 	//May be changed to virtual and redifined in each child
 	int damageBlocked = armor;

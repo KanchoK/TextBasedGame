@@ -34,7 +34,7 @@ public:
 
 	int NormalAttack();
 	virtual int SpecialAttack();
-	int Deffence();
+	int Defence();
 
 	void PrintTest();
 };

@@ -18,11 +18,11 @@ void FightSimulator::Fight(Gladiator* player, Gladiator* enemy)
 		cout << "Your current health: " << player->GetHealth() << "; current stamina: " << player->GetStamina() << endl;
 		cout << "Opponet's current health: " << enemy->GetHealth() << endl;
 		cout << "What will be your move now:\n";
-		cout << "1 - Normal attack; 2 - Special attack; 3 - Deffence\n";
+		cout << "1 - Normal attack; 2 - Special attack; 3 - Defence\n";
 		int typeOfPlayerAttack;
 		cin >> typeOfPlayerAttack;
 
-		//this switch id saying what will happen in the different cases of attacks
+		//this switch is saying what will happen in the different cases of attacks
 		switch (typeOfPlayerAttack)
 		{
 		case 1:
@@ -36,11 +36,11 @@ void FightSimulator::Fight(Gladiator* player, Gladiator* enemy)
 		case 3:
 		default:
 			playerDamageDone = 0;
-			playerDamageBlocked = player->Deffence();
+			playerDamageBlocked = player->Defence();
 			break;
 		}
 		
-		//this makes sure if you beat the enemy to exit the while before the enemy can use deffence() and "revive" :)
+		//this makes sure if you beat the enemy to exit the while before the enemy can use Defence() and "revive" :)
 		if (enemy->GetHealth() <= 0)
 		{
 			break;
@@ -64,8 +64,8 @@ void FightSimulator::Fight(Gladiator* player, Gladiator* enemy)
 		case 3:
 		default:
 			enemyDamageDone = 0;
-			enemyDamageBlocked = enemy->Deffence();
-			cout << enemy->GetName() << " used Deffence\n";
+			enemyDamageBlocked = enemy->Defence();
+			cout << enemy->GetName() << " used Defence\n";
 			break;
 		}
 		cout << "-----------------------------------------------\n";
@@ -92,7 +92,7 @@ void FightSimulator::Fight(Gladiator* player, Gladiator* enemy)
 		player->SetHealth(player->GetHealth() - enemyDamageDone);
 		enemy->SetHealth(enemy->GetHealth() - playerDamageDone);
 
-		//recovers 20 stamina per turn if typeOfAttack is Deffence(); else recovers 10 stamina per turn
+		//recovers 20 stamina per turn if typeOfAttack is Defence(); else recovers 10 stamina per turn
 		if (typeOfPlayerAttack != 1 && typeOfPlayerAttack != 2)
 		{
 			player->SetStamina(player->GetStamina() + 20);

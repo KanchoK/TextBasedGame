@@ -82,5 +82,4 @@ void Game::Run()
 		FightSimulator battle;
 		battle.Fight(gladiator, enemy);
 	}
-	
 }
