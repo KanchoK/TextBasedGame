@@ -3,6 +3,7 @@
 #include"PlayerCreator.h"
 #include"EnemyCreator.h"
 #include"FightSimulator.h"
+#include"Printer.h"
 
 #pragma once
 

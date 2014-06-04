@@ -2,10 +2,8 @@
 
 void Game::Run()
 {
-	cout << "Welcome to the Gladiator's Arena.\n";
-	cout << "-------------------------------------------------------------------\n";
-	cout << "If you are playing for first time or you don't know the different types of\n";
-	cout << "gladiators, form which you can choose enter 1 !!! Otherwise, enter 0.\n";
+	Printer printer;
+	printer.BeginningText();
 	bool infoOn = 0;
 	cin >> infoOn;
 	if (infoOn)
@@ -45,12 +43,12 @@ void Game::Run()
 			break;
 		if (firstFight == 0)
 		{
-			cout << "This is your first fight gladiator " << gladiator->GetName() << ". Try not to die!\n";
+			printer.FirstGameText(gladiator);
 			firstFight++;
 		}
 		else
 		{
-			cout << "Do you want to fight again: 1 - Yes; 0 - No.\n";
+			printer.ContinueGameText();
 			cin >> continueTheGame;
 			if(continueTheGame == 0)
 				break;
