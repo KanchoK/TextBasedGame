@@ -39,12 +39,6 @@
     <ClCompile Include="RandomGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PlayerCreator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemyCreator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="FightSimulator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -55,6 +49,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Printer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GladiatorCreator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomEnemy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -83,12 +86,6 @@
     <ClInclude Include="RandomGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PlayerCreator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemyCreator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="FightSimulator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -96,6 +93,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Printer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GladiatorCreator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomEnemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

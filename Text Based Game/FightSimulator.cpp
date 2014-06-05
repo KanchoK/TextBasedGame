@@ -104,6 +104,7 @@ void FightSimulator::Fight(Gladiator* player, Gladiator* enemy)
 		RandomGenerator randomGenerator;
 		int typeOfEnemyAttack = randomGenerator.RandNumber(1, 3);
 		EnemyAttack(typeOfEnemyAttack, enemy);
+		cout << endl;
 		cout << "-----------------------------------------------\n";
 
 		//sets the player's and enemy's damegeDone after the blocked damage is taken in consideretion

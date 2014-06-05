@@ -1,6 +1,16 @@
-#include"PlayerCreator.h"
+#include"PlayerInput.h"
 
-void PlayerCreator::CreatePlayer()
+string PlayerInput::GetName()
+{
+	return name;
+}
+
+int PlayerInput::GetTypeFromCreator()
+{
+	return typeFromCreator;
+}
+
+void PlayerInput::GetUserInput()
 {
 	cout << "What's your name warrior? (enter your nickname)\n";
 	cin >> name;
@@ -11,14 +21,4 @@ void PlayerCreator::CreatePlayer()
 		cout << "You need to enter the number of the gladiator you've chosen!\n";
 		cin >> typeFromCreator;
 	} while (typeFromCreator < 1 && typeFromCreator > 5);
-}
-
-int PlayerCreator::GetTypeFromCreator()
-{
-	return typeFromCreator;
-}
-
-string PlayerCreator::GetName()
-{
-	return name;
 }

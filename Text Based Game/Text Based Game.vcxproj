@@ -65,14 +65,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Dimachaerius.cpp" />
-    <ClCompile Include="EnemyCreator.cpp" />
+    <ClCompile Include="RandomEnemy.cpp" />
     <ClCompile Include="FightSimulator.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Gladiator.cpp" />
+    <ClCompile Include="GladiatorCreator.cpp" />
     <ClCompile Include="Info.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Murmillo.cpp" />
-    <ClCompile Include="PlayerCreator.cpp" />
+    <ClCompile Include="PlayerInput.cpp" />
     <ClCompile Include="Printer.cpp" />
     <ClCompile Include="RandomGenerator.cpp" />
     <ClCompile Include="Retarius.cpp" />
@@ -81,13 +82,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dimachaerius.h" />
-    <ClInclude Include="EnemyCreator.h" />
+    <ClInclude Include="RandomEnemy.h" />
     <ClInclude Include="FightSimulator.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Gladiator.h" />
+    <ClInclude Include="GladiatorCreator.h" />
     <ClInclude Include="Info.h" />
     <ClInclude Include="Murmillo.h" />
-    <ClInclude Include="PlayerCreator.h" />
+    <ClInclude Include="PlayerInput.h" />
     <ClInclude Include="Printer.h" />
     <ClInclude Include="RandomGenerator.h" />
     <ClInclude Include="Retarius.h" />

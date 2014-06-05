@@ -5,16 +5,16 @@ using namespace std;
 
 #pragma once
 
-class PlayerCreator
+//this class it taking the name and the type entered from the player
+class PlayerInput
 {
 private:
 	string name;
 	int typeFromCreator;
 
 public:
-	void CreatePlayer();
-
-	int GetTypeFromCreator();
-	
 	string GetName();
+	int GetTypeFromCreator();
+
+	void GetUserInput();
 };
