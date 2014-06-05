@@ -4,7 +4,7 @@ void Game::Run()
 {
 	Printer printer;
 	printer.BeginningText();
-	bool infoOn = 0;
+	int infoOn = 0;
 	std::cin >> infoOn;
 	if (infoOn)
 	{
@@ -19,7 +19,7 @@ void Game::Run()
 
 	std::cout << std::endl;
 
-	bool continueTheGame = 1;
+	int continueTheGame = 1;
 	int firstFight = 0;
 	while (continueTheGame)
 	{
@@ -34,8 +34,10 @@ void Game::Run()
 		{
 			printer.ContinueGameText();
 			std::cin >> continueTheGame;
-			if(continueTheGame == 0)
+			if(continueTheGame != 1)
+			{
 				break;
+			}
 		}
 
 		RandomEnemy randomEnemy;
