@@ -7,7 +7,7 @@ class Samnite : public Gladiator
 public:
 
 	Samnite();
-	Samnite(string name);
+	Samnite(std::string name);
 	
 	virtual int SpecialAttack();
 };

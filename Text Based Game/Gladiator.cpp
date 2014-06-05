@@ -42,7 +42,7 @@ int Gladiator::GetArmor()
 	return armor;
 }
 
-string Gladiator::GetName()
+std::string Gladiator::GetName()
 {
 	return name;
 }
@@ -64,9 +64,4 @@ int Gladiator::Defence()
 	//May be changed to virtual and redifined in each child
 	int damageBlocked = armor;
 	return damageBlocked;
-}
-
-void Gladiator::PrintTest()
-{
-	cout << name << " " << health << " " << stamina << " " << damage << " " << armor << "\n";
 }

@@ -7,7 +7,7 @@ class Murmillo : public Gladiator
 public:
 
 	Murmillo();
-	Murmillo(string name);
+	Murmillo(std::string name);
 	
 	virtual int SpecialAttack();
 };

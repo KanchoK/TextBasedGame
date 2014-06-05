@@ -7,7 +7,7 @@ class Thraex : public Gladiator
 public:
 
 	Thraex();
-	Thraex(string name);
+	Thraex(std::string name);
 
 	virtual int SpecialAttack();
 };

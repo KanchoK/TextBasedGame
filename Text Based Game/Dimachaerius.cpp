@@ -8,7 +8,7 @@ Dimachaerius::Dimachaerius()
 	armor = 10;
 }
 
-Dimachaerius::Dimachaerius(string name)
+Dimachaerius::Dimachaerius(std::string name)
 {
 	this->name = name;
 	health = 120;
@@ -23,12 +23,12 @@ int Dimachaerius::SpecialAttack()
 	int neededStamina = 70;
 	if(stamina < neededStamina)
 	{
-		cout << name << " didn't have enough stamina, so he did normal attack.\n";
+		std::cout << name << " didn't have enough stamina, so he did normal attack.\n";
 		damageDone = this->NormalAttack();
 	}
 	else
 	{
-		cout << name << " used Dimachaerius' special attack - Double Swing.\n";
+		std::cout << name << " used Dimachaerius' special attack - Double Swing.\n";
 		damageDone = damage * 2;
 		stamina -= neededStamina;
 	}

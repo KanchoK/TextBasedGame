@@ -7,7 +7,7 @@ class Dimachaerius : public Gladiator
 public:
 
 	Dimachaerius();
-	Dimachaerius(string name);
+	Dimachaerius(std::string name);
 	
 	virtual int SpecialAttack();
 };

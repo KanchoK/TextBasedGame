@@ -8,7 +8,7 @@ Retarius::Retarius()
 	armor = 15;
 }
 
-Retarius::Retarius(string name)
+Retarius::Retarius(std::string name)
 {
 	this->name = name;
 	health = 140;
@@ -23,12 +23,12 @@ int Retarius::SpecialAttack()
 	int neededStamina = 80;
 	if(stamina < neededStamina)
 	{
-		cout << name << " didn't have enough stamina, so he did normal attack.\n";
+		std::cout << name << " didn't have enough stamina, so he did normal attack.\n";
 		damageDone = this->NormalAttack();
 	}
 	else
 	{
-		cout << name << " used Retarius' special attack Throw the Net.\n";
+		std::cout << name << " used Retarius' special attack Throw the Net.\n";
 		damageDone = damage + 40;
 		stamina -= neededStamina;
 	}

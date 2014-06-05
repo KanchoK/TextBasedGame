@@ -1,6 +1,6 @@
 #include"RandomEnemy.h"
 
-string RandomEnemy::GetName()
+std::string RandomEnemy::GetName()
 {
 	return name;
 }

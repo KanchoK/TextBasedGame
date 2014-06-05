@@ -2,14 +2,12 @@
 #include<cstdlib>
 #include<string>
 
-using namespace std;
-
 #pragma once
 
 class RandomGenerator
 {
 public:
-	string RandName();
+	std::string RandName();
 	
 	int RandNumber(int from, int to);
 };

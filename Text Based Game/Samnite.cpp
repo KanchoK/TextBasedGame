@@ -8,7 +8,7 @@ Samnite::Samnite()
 	armor = 35;
 }
 
-Samnite::Samnite(string name)
+Samnite::Samnite(std::string name)
 {
 	this->name = name;
 	health = 120;
@@ -23,12 +23,12 @@ int Samnite::SpecialAttack()
 	int neededStamina = 70;
 	if(stamina < neededStamina)
 	{
-		cout << name << " didn't have enough stamina, so he did normal attack.\n";
+		std::cout << name << " didn't have enough stamina, so he did normal attack.\n";
 		damageDone = this->NormalAttack();
 	}
 	else
 	{
-		cout << name << " used Samnite' special attack Caunter Attack\n";
+		std::cout << name << " used Samnite' special attack Caunter Attack\n";
 		damageDone = damage + 15;
 		stamina -= neededStamina;
 	}

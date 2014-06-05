@@ -1,8 +1,6 @@
 #include<string>
 #include<iostream>
 
-using namespace std;
-
 #pragma once
 
 class Gladiator
@@ -10,7 +8,7 @@ class Gladiator
 protected:
 
 	bool alive;
-	string name;
+	std::string name;
 	int health;
 	int stamina;
 	int damage;
@@ -30,11 +28,9 @@ public:
 
 	int GetDamage();
 	int GetArmor();
-	string GetName();
+	std::string GetName();
 
 	int NormalAttack();
 	virtual int SpecialAttack();
 	int Defence();
-
-	void PrintTest();
 };

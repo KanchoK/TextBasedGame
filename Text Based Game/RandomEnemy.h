@@ -7,11 +7,11 @@
 class RandomEnemy
 {
 private:
-	string name;
+	std::string name;
 	int typeOfEnemy;
 
 public:
-	string GetName();
+	std::string GetName();
 	int GetTypeOfEmeny();
 	
 	//set's the this->name and this->typeOfEnemy random values

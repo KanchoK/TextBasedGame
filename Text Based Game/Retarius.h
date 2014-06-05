@@ -7,7 +7,7 @@ class Retarius : public Gladiator
 public:
 
 	Retarius();
-	Retarius(string name);
+	Retarius(std::string name);
 	
 	virtual int SpecialAttack();
 };

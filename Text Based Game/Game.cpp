@@ -5,7 +5,7 @@ void Game::Run()
 	Printer printer;
 	printer.BeginningText();
 	bool infoOn = 0;
-	cin >> infoOn;
+	std::cin >> infoOn;
 	if (infoOn)
 	{
 		Info info;
@@ -17,7 +17,7 @@ void Game::Run()
 	GladiatorCreator gladiatorCreator;
 	player = gladiatorCreator.CreateGladiator(playerInput.GetName(), playerInput.GetTypeFromCreator());
 
-	cout << endl;
+	std::cout << std::endl;
 
 	bool continueTheGame = 1;
 	int firstFight = 0;
@@ -33,7 +33,7 @@ void Game::Run()
 		else
 		{
 			printer.ContinueGameText();
-			cin >> continueTheGame;
+			std::cin >> continueTheGame;
 			if(continueTheGame == 0)
 				break;
 		}
@@ -42,7 +42,7 @@ void Game::Run()
 		randomEnemy.GetRandomValues();
 		enemy = gladiatorCreator.CreateGladiator(randomEnemy.GetName(), randomEnemy.GetTypeOfEmeny());
 
-		cout << endl;
+		std::cout << std::endl;
 
 		FightSimulator battle;
 		battle.Fight(player, enemy);

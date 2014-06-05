@@ -1,6 +1,6 @@
 #include"GladiatorCreator.h"
 
-Gladiator* GladiatorCreator::CreateGladiator(string name, int typeOfGladiator)
+Gladiator* GladiatorCreator::CreateGladiator(std::string name, int typeOfGladiator)
 {
 	switch (typeOfGladiator)
 	{
