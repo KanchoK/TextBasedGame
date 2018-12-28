@@ -29,7 +29,7 @@ void FightSimulator::EnemyAttack(int typeOfAttack, Gladiator* enemy)
 	case 1:
 		enemyDamageBlocked = 0;
 		enemyDamageDone = enemy->NormalAttack();
-		cout << enemy->GetName() << " used Normal attack.";
+		std::cout << enemy->GetName() << " used Normal attack.";
 		break;
 	case 2:
 		enemyDamageBlocked = 0;
@@ -39,7 +39,7 @@ void FightSimulator::EnemyAttack(int typeOfAttack, Gladiator* enemy)
 	default:
 		enemyDamageDone = 0;
 		enemyDamageBlocked = enemy->Defence();
-		cout << enemy->GetName() << " used Defence.";
+		std::cout << enemy->GetName() << " used Defence.";
 		break;
 	}
 }
@@ -62,7 +62,7 @@ void FightSimulator::FightOutcome(Gladiator* player, Gladiator* enemy)
 {
 	if(enemy->GetHealth() <= 0)
 	{
-		cout << "You won!\n";
+		std::cout << "You won!\n";
 		player->SetHealth(playerHealth);
 		player->SetStamina(playerStamina);
 
@@ -71,7 +71,7 @@ void FightSimulator::FightOutcome(Gladiator* player, Gladiator* enemy)
 	}
 	else
 	{
-		cout << "You died!\n";
+		std::cout << "You died!\n";
 
 		//this indicates that you are dead and the game is over
 		player->SetAlive(0);
@@ -94,18 +94,18 @@ void FightSimulator::Fight(Gladiator* player, Gladiator* enemy)
 	{
 		printer.PlayerTurnText(player, enemy);
 		int typeOfPlayerAttack;
-		cin >> typeOfPlayerAttack;
+		std::cin >> typeOfPlayerAttack;
 
 		//this method is saying what will happen in the different cases of attacks
 		PlayerAttack(typeOfPlayerAttack, player);
 
-		cout << "-----------------------------------------------\n";
-		cout << "Enemy's turn.\n";
+		std::cout << "-----------------------------------------------\n";
+		std::cout << "Enemy's turn.\n";
 		RandomGenerator randomGenerator;
 		int typeOfEnemyAttack = randomGenerator.RandNumber(1, 3);
 		EnemyAttack(typeOfEnemyAttack, enemy);
-		cout << endl;
-		cout << "-----------------------------------------------\n";
+		std::cout << std::endl;
+		std::cout << "-----------------------------------------------\n";
 
 		//sets the player's and enemy's damegeDone after the blocked damage is taken in consideretion
 		if (playerDamageDone > enemyDamageBlocked)
